@@ -1,0 +1,22 @@
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>WPF Mvvm App (Toolkit.MVVM)</Name>
+		<Description>Template for creating a WPF Mvvm project</Description>
+		<Icon>Icon.ico</Icon>
+		<ProjectType>csharp</ProjectType>
+		<LanguageTag>csharp</LanguageTag>
+		<PlatformTag>windows</PlatformTag>
+		<ProjectTypeTag>desktop</ProjectTypeTag>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectCollection>
+			<ProjectTemplateLink ProjectName="My Windows Application">
+				WindowsApp\MyTemplate.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="My Class Library">
+				ClassLib\MyTemplate.vstemplate
+			</ProjectTemplateLink>
+		</ProjectCollection>
+	</TemplateContent>
+</VSTemplate>

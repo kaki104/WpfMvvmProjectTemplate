@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMvvm", "WpfMvvm\WpfMvvm.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMvvm.Core", "WpfMvvm.Core\WpfMvvm.Core.csproj", "{E5E0E430-C909-482A-AA1F-4295C3DE64BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMvvmSolutionTemplate", "WpfMvvmSolutionTemplate\WpfMvvmSolutionTemplate.csproj", "{53946EEE-29B3-4ACD-B0BA-0FD12B0135E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E5E0E430-C909-482A-AA1F-4295C3DE64BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5E0E430-C909-482A-AA1F-4295C3DE64BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5E0E430-C909-482A-AA1F-4295C3DE64BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53946EEE-29B3-4ACD-B0BA-0FD12B0135E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53946EEE-29B3-4ACD-B0BA-0FD12B0135E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53946EEE-29B3-4ACD-B0BA-0FD12B0135E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53946EEE-29B3-4ACD-B0BA-0FD12B0135E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53946EEE-29B3-4ACD-B0BA-0FD12B0135E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WpfMvvmSolutionTemplate</RootNamespace>
+    <AssemblyName>WpfMvvmSolutionTemplate</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WpfMvvm.Core\Bases\ViewModelBase.cs" />
+    <Compile Include="WpfMvvm.Core\Extensions\CommandExtension.cs" />
+    <Compile Include="WpfMvvm.Core\Interfaces\IApplicationService.cs" />
+    <Compile Include="WpfMvvm.Core\Interfaces\IViewModelBase.cs" />
+    <Compile Include="WpfMvvm.Core\Messages\SigninChangedMessage.cs" />
+    <Compile Include="WpfMvvm.Core\Models\Person.cs" />
+    <Compile Include="WpfMvvm.Core\obj\Debug\net5.0-windows\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="WpfMvvm.Core\obj\Debug\net5.0-windows\WpfMvvm.Core.AssemblyInfo.cs" />
+    <Compile Include="WpfMvvm.Core\obj\Release\net5.0-windows\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="WpfMvvm.Core\obj\Release\net5.0-windows\WpfMvvm.Core.AssemblyInfo.cs" />
+    <Compile Include="WpfMvvm.Core\Services\ApplicationService.cs" />
+    <Compile Include="WpfMvvm\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfMvvm\AssemblyInfo.cs" />
+    <Compile Include="WpfMvvm\Behaviors\FrameBehavior.cs" />
+    <Compile Include="WpfMvvm\Behaviors\PasswordBoxBehavior.cs" />
+    <Compile Include="WpfMvvm\obj\Debug\net5.0-windows\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="WpfMvvm\obj\Debug\net5.0-windows\WpfMvvm.AssemblyInfo.cs" />
+    <Compile Include="WpfMvvm\obj\Release\net5.0-windows\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="WpfMvvm\obj\Release\net5.0-windows\WpfMvvm.AssemblyInfo.cs" />
+    <Compile Include="WpfMvvm\ViewModels\MainViewModel.cs" />
+    <Compile Include="WpfMvvm\ViewModels\RootViewModel.cs" />
+    <Compile Include="WpfMvvm\ViewModels\SignViewModel.cs" />
+    <Compile Include="WpfMvvm\Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfMvvm\Views\RootView.xaml.cs">
+      <DependentUpon>RootView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfMvvm\Views\SignView.xaml.cs">
+      <DependentUpon>SignView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WpfMvvm.Core\MyTemplate.vstemplate" />
+    <Content Include="WpfMvvm.Core\__TemplateIcon.ico" />
+    <Content Include="WpfMvvmTemplate.vstemplate" />
+    <Content Include="WpfMvvm\MyTemplate.vstemplate" />
+    <Content Include="WpfMvvm\__TemplateIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="WpfMvvm\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfMvvm\Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfMvvm\Views\RootView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfMvvm\Views\SignView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WpfMvvm.Core\obj\Debug\net5.0-windows\WpfMvvm.Core.AssemblyInfoInputs.cache" />
+    <None Include="WpfMvvm.Core\obj\Debug\net5.0-windows\WpfMvvm.Core.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="WpfMvvm.Core\obj\Release\net5.0-windows\WpfMvvm.Core.AssemblyInfoInputs.cache" />
+    <None Include="WpfMvvm.Core\obj\Release\net5.0-windows\WpfMvvm.Core.csproj.AssemblyReference.cache" />
+    <None Include="WpfMvvm.Core\obj\Release\net5.0-windows\WpfMvvm.Core.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="WpfMvvm.Core\WpfMvvm.Core.csproj" />
+    <None Include="WpfMvvm\obj\Debug\net5.0-windows\WpfMvvm.AssemblyInfoInputs.cache" />
+    <None Include="WpfMvvm\obj\Debug\net5.0-windows\WpfMvvm.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="WpfMvvm\obj\Release\net5.0-windows\WpfMvvm.AssemblyInfoInputs.cache" />
+    <None Include="WpfMvvm\obj\Release\net5.0-windows\WpfMvvm.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="WpfMvvm\WpfMvvm.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WpfMvvm.Core\bin\Debug\net5.0-windows\ref\" />
+    <Folder Include="WpfMvvm.Core\bin\Release\net5.0-windows\ref\" />
+    <Folder Include="WpfMvvm.Core\obj\Debug\net5.0-windows\ref\" />
+    <Folder Include="WpfMvvm.Core\obj\Release\net5.0-windows\ref\" />
+    <Folder Include="WpfMvvm\bin\Debug\net5.0-windows\ref\" />
+    <Folder Include="WpfMvvm\bin\Release\net5.0-windows\ref\" />
+    <Folder Include="WpfMvvm\obj\Debug\net5.0-windows\ref\" />
+    <Folder Include="WpfMvvm\obj\Debug\net5.0-windows\Views\" />
+    <Folder Include="WpfMvvm\obj\Release\net5.0-windows\ref\" />
+    <Folder Include="WpfMvvm\obj\Release\net5.0-windows\Views\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
