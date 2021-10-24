@@ -90,7 +90,7 @@
   <ItemGroup>
     <Content Include="WpfMvvm.Core\Core.vstemplate" />
     <Content Include="WpfMvvm.Core\__TemplateIcon.ico" />
-    <Content Include="WpfMvvmTemplate.vstemplate" />
+    <Content Include="WpfMvvmSolutionTemplate.vstemplate" />
     <Content Include="WpfMvvm\App.vstemplate" />
     <Content Include="WpfMvvm\__TemplateIcon.ico" />
     <Content Include="__TemplateIcon.png" />
